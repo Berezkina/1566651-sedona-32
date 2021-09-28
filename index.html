@@ -30,11 +30,9 @@
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="button" href="#">Хочу сюда!</a>
-          </li>
         </ul>
       </nav>
+      <a class="button" href="#">Хочу сюда!</a>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Город Седона</h1>
@@ -95,38 +93,36 @@
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form">
-          <label class="visually-hidden" for="subscribe-email">Email</label>
-          <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email">
-          <a class="button" href="#">Подписаться</a>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="subscribe-email">
+            <label class="visually-hidden" for="subscribe-email">Email</label>
+            <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
+          </p>
+          <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <section class="footer-social">
-        <ul>
-          <li class="social-twitter">
+      <section class="footer-contacts">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
             <a href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
-          <li class="social-facebook">
+          <li class="footer-social-item">
             <a href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
-          <li class="social-yuotube">
+          <li class="footer-social-item">
             <a href="www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
-      </section>
-      <section class="footer-contacts">
         <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
-      <section class="footer-copyright">
         <a class="footer-copyright-link" href="https://htmlacademy.ru/">
           <img class="footer-copyright-logo" src="" alt="Логотип HTML Academy">
         </a>
