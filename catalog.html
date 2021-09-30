@@ -48,11 +48,9 @@
       </ul>
     </header>
 
-    <section class="catalog-hotels">
-      <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-      <!--CATALOG-FILTERS-->
-      <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
-
+    <section class="catalog-filters">
+      <h2 class="visually-hidden">Поиск гостиницы</h2>
+      <form class="catalog-filters-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфрастуктура:</legend>
           <ul class="catalog-filter-list">
@@ -123,12 +121,13 @@
           </button>
         </fieldset>
         <button class="button" type="submit">Применить</button>
-        <input type="reset" value="Сбросить">
+        <button class="button button-reset" type="reset">Сбросить</button>
       </form>
+    </section>
 
-      <!--FILTERS-RESULT-->
-      <h2 class="filters-result">Найдено гостиниц: <span class="filters-results-number">38</span></h2>
-      <form class="sorting-type">
+    <section class="filters-result">
+      <h2 class="filters-result-title">Найдено гостиниц: <span class="filters-results-number">38</span></h2>
+      <form class="sorting-type-form">
         <label class="visually-hidden" for="sorting">Сортировка</label>
         <select class="select-control" id="sorting" name="sorting">
           <option value="cheap">Сначала дешевые</option>
@@ -145,8 +144,10 @@
       <a href="#" class="button">
         <span class="visually-hidden">Список</span>
       </a>
+    </section>
 
-      <!--HOTELS-LIST-->
+    <section class="catalog-hotels">
+      <h2 class="visually-hidden">Список гостиниц</h2>
       <ul class="hotels-list">
         <li class="hotels-card">
           <a class="hotels-card-link">
@@ -194,9 +195,11 @@
         </li>
       </ul>
       <button class="button hotels-show-more" type="button">Загрузить еще</button>
+    </section>
 
-      <!--PAGINATION-->
-      <ul class="pagination">
+    <section class="pagination">
+      <h2 class="visually-hidden">Список страниц</h2>
+      <ul class="pagination-list">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
         </li>
@@ -216,16 +219,15 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
-      <form class="hotels-per-page">
-        <label for="per-page">Гостиниц на странице:</label>
-        <select class="select-control" id="per-page" name="per-page">
+      <form class="hotels-per-page-form">
+        <label for="hotels-per-page">Гостиниц на странице:</label>
+        <select class="select-control" id="hotels-per-page" name="hotels-per-page">
           <option value="count-3">3</option>
           <option value="count-4" selected>4</option>
           <option value="count-5">5</option>
           <option value="count-6">6</option>
         </select>
       </form>
-
     </section>
 
     <section class="subscribe">
