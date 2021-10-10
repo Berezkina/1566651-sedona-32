@@ -14,12 +14,20 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
   color: #333333;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .button {
@@ -59,6 +67,18 @@ body {
 .page-header {
   color: #000000;
   background: #ffffff;
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+}
+
+.navigation {
+  width: 310px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link {
@@ -70,15 +90,39 @@ body {
   text-decoration: none;
 }
 
+.navigation-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.navigation-user {
+  max-width: 160px;
+  margin-left: auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #000000;
   background-color: grey;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-logo-container {
   background-image: url("../img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.main-logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages-header {
@@ -99,6 +143,20 @@ body {
 
 .advantages-list {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.features-item {
+  width: 400px;
 }
 
 .advantages-title,
@@ -111,10 +169,12 @@ body {
 
 .advantages-item:nth-child(-n+2) {
   color: #ffffff;
+  width: 1200px;
 }
 
 .advantages-item:nth-child(n+3) {
   color: #333333;
+  width: 400px;
 }
 
 .advantages-item:nth-child(n+3) .advantages-title {
@@ -196,6 +256,23 @@ body {
   color: #333333;
 }
 
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 107px;
+}
+
+.footer-social-item {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-contacts {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+}
+
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -203,6 +280,12 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  width: 720px;
+}
+
+.footer-copyright-link {
+  width: 115px;
+  margin-left: auto;
 }
 
 .header-inner-container {
