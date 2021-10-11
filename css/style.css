@@ -364,3 +364,78 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+
+.filters-result {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+}
+
+.sorting-type-form {
+  width: 287px;
+  margin: 0 auto;
+}
+
+.display-mode {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin-left: auto;
+}
+
+.catalog-filters {
+  width: 1057px;
+  margin: 0 auto;
+}
+
+.catalog-filters-form {
+  display: flex;
+}
+
+.catalog-hotels {
+  width: 1057px;
+  margin: 0 auto;
+}
+
+.hotels-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels-card {
+  display: flex;
+}
+
+.hotels-info {
+  width: 535px;
+}
+
+.hotels-rating {
+  width: 160px;
+  margin-left: auto;
+}
+
+.pagination {
+  width: 1057px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 370px;
+  justify-content: space-between;
+}
+
+.pagination-item {
+  width: 55px;
+}
+
+.hotels-per-page-form {
+  width: 386px;
+  margin-left: auto;
+}
