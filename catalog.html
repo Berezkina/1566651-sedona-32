@@ -113,21 +113,29 @@
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label>
-                <input class="catalog-filter-input" type="number" min="0" name="range-min" value="0">
-              </label>
-              <label>
-                <input class="catalog-filter-input" type="number" max="10000" name="range-max" value="9000">
-              </label>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену</span>
-              </button>
+              <div class="catalog-filter-price">
+                <div class="catalog-filter-price-input">
+                  <label>
+                    <input class="catalog-filter-input" type="number" min="0" name="range-min" value="0">
+                  </label>
+                  <label>
+                    <input class="catalog-filter-input" type="number" max="10000" name="range-max" value="9000">
+                  </label>
+                </div>
+                <div class="catalog-filter-price-range">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
+              </div>
             </fieldset>
-            <button class="button button-apply" type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
+            <div class="catalog-filter-button">
+              <button class="button button-apply" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
@@ -223,7 +231,9 @@
             </div>
           </li>
         </ul>
-        <button class="button button-show-more" type="button">Загрузить еще</button>
+        <div class="center">
+          <button class="button button-show-more" type="button">Загрузить еще</button>
+        </div>
       </section>
 
       <section class="pagination">
@@ -266,8 +276,8 @@
           <p class="subscribe-email">
             <label class="visually-hidden" for="subscribe-email">Email</label>
             <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
+            <button class="button button-subscribe" type="submit">Подписаться</button>
           </p>
-          <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
     </div>

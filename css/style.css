@@ -62,11 +62,10 @@ body {
 .button-show-more {
   font-size: 20px;
   line-height: 26px;
-  align-items: center;
 }
 
-.button-apply {
-  align-items: center;
+.center {
+  text-align: center;
 }
 
 .button-reset {
@@ -145,7 +144,7 @@ body {
 
 .main-index {
   color: #000000;
-  background-color: grey;
+  background-color: #ffffff;
 }
 
 .page-container {
@@ -160,6 +159,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
+  background-color: grey;
 }
 
 .main-logo {
@@ -223,6 +223,20 @@ body {
   color: #000000;
 }
 
+.advantages-item:nth-child(n+3) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-row {
+  display: flex;
+  flex-direction: row;
+  background-color: #83B3D3;
+}
+
 .features-list {
   margin: 0;
   padding: 0;
@@ -232,6 +246,10 @@ body {
 
 .features-item {
   width: 400px;
+}
+
+.features-item:nth-child(2n-1) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .features-title {
@@ -293,9 +311,14 @@ body {
   background-repeat: no-repeat;
   background-color: grey;
   padding-top: 94px;
+  padding-bottom: 94px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.subscribe-email {
+  margin: 0;
 }
 
 .subscribe-inner {
@@ -423,7 +446,8 @@ body {
 
 .catalog-filters-form {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .catalog-filter-title {
@@ -431,6 +455,10 @@ body {
   line-height: 26px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+.catalog-filter-title:nth-child(3) {
+  margin-bottom: 34px;
 }
 
 .catalog-filter-list {
@@ -443,14 +471,35 @@ body {
   margin-bottom: 13px;
 }
 
+.catalog-filter-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-filter-price-input {
+  margin-bottom: 32px;
+}
+
 .control-label {
   font-size: 18px;
   line-height: 23px;
 }
 
-.catalog-filters-form .button {
-  width: 110px;
-  height: 60px;
+.catalog-filter-button {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.catalog-filter-button .button-apply {
+  width: 160px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.catalog-filter-button .button-reset {
+  width: 160px;
+  height: 23px;
 }
 
 .catalog-hotels {
