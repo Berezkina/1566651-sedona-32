@@ -4,17 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
   <header class="page-header">
     <div class="wrapper">
       <div class="page-header-container">
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="#">Главная</a>
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Седоне</a>
@@ -24,7 +26,7 @@
             </li>
           </ul>
         </nav>
-        <img class="navigation-logo" src="img/sedona.png" width="138" height="70" alt="Логотип сайта города Седона">
+        <img class="navigation-logo" src="img/sedona.png" width="138" height="70" alt="Логотип сайта города Седона.">
         <div class="navigation-user">
           <a class="navigation-user-link" href="#">
             <div class="navigation-user-icon">
@@ -44,6 +46,65 @@
             </div>
             <span class="visually-hidden">Избранное</span>
           </a>
+
+          <!-- Поповер: избранное -->
+          <div class="popover-favourites">
+            <div class="popover-container">
+              <div class="popover-content">
+                <h2 class="visually-hidden">Избранное</h2>
+                <ul class="favourites-card-list">
+                  <li class="favourites-card-item">
+                    <a class="favourites-card-link" href="#">
+                      <img class="favourites-card-image" src="/img/hotel-2-small.jpg" width="48" height="48"
+                        alt="Desert Quail Inn.">
+                      <div class="favourites-card-hotel">
+                        <p class="favourites-card-title">Desert Quail Inn</p>
+                        <p class="favourites-card-about">Мотель</p>
+                      </div>
+                    </a>
+                    <button class="button button-favourites-delete" type="button">
+                      <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" />
+                        <path
+                          d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" />
+                        <path
+                          d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" />
+                        <path
+                          d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из избранного</span>
+                    </button>
+                  </li>
+                  <li class="favourites-card-item">
+                    <a class="favourites-card-link" href="#">
+                      <img class="favourites-card-image" src="/img/hotel-3-small.jpg" width="48" height="48"
+                        alt="Villas at Poco Diablo.">
+                      <div class="favourites-card-hotel">
+                        <p class="favourites-card-title">Villas at Poco Diablo</p>
+                        <p class="favourites-card-about">Апартаменты</p>
+                      </div>
+                    </a>
+                    <button class="button button-favourites-delete" type="button">
+                      <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" />
+                        <path
+                          d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" />
+                        <path
+                          d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" />
+                        <path
+                          d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из избранного</span>
+                    </button>
+                  </li>
+                </ul>
+                <button class="button button-favourites-all">Все избранные</button>
+              </div>
+            </div>
+          </div>
+
           <a class="button button-link" href="#">Хочу сюда!</a>
         </div>
       </div>
@@ -54,8 +115,10 @@
     <div class="wrapper">
       <div class="main-logo-container">
         <h1 class="visually-hidden">Город Седона</h1>
-        <img class="main-logo" src="img/welcome.svg" width="458" height="352" alt="Логотип Седона">
+        <img class="main-logo" src="img/welcome.svg" width="458" height="352" alt="Логотип Седона.">
       </div>
+
+      <!-- Преимущества -->
       <section class="advantages">
         <h2 class="advantages-header center">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="advantages-info center">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -67,10 +130,10 @@
                 <p class="advantages-number">— №1 —</p>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-image" src="img/photo-1.jpg" width="800" height="384" alt="Город Седона">
+              <img class="advantages-image" src="img/photo-1.jpg" width="800" height="384" alt="Город Седона.">
             </div>
             <div>
-              <ul class="features-list color">
+              <ul class="features-list">
                 <li class="features-item features-housing">
                   <h3 class="features-title">Жильё</h3>
                   <p class="features-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
@@ -90,7 +153,7 @@
           </li>
           <li class="advantages-item">
             <div class="advantages-row">
-              <img class="advantages-image" src="img/photo-2.jpg" width="800" height="384" alt="Мост Дьявола">
+              <img class="advantages-image" src="img/photo-2.jpg" width="800" height="384" alt="Мост Дьявола.">
               <div>
                 <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
                 <p class="advantages-number">— №2 —</p>
@@ -115,6 +178,8 @@
           </li>
         </ul>
       </section>
+
+      <!-- Поиск гостиницы -->
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="hotel-search-title">Заинтересовались?</p>
@@ -122,17 +187,20 @@
           гостиниц в Седоне</p>
         <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
+
+      <!-- Подписка -->
       <section class="subscribe-main">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-info">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Email</label>
-          <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email">
+          <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
           <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
     </div>
   </main>
+
   <footer class="page-footer">
     <div class="wrapper">
       <div class="footer-contacts-container">
@@ -179,6 +247,159 @@
       </div>
     </div>
   </footer>
+
+  <!-- Модальное окно: поиск гостиницы -->
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-search">
+      <button class="modal-close-button" type="button">
+        <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" />
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="search-form-fieldset">
+            <p class="date arrival-date">
+              <label class="field-label" for="arrival-date">Дата заезда:</label>
+              <span class="date-field-form">
+                <button class="button-date" type="button">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                      <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z"
+                        fill="black" />
+                      <path
+                        d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"
+                        fill="black" />
+                      <path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z"
+                        fill="black" />
+                      <path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z"
+                        fill="black" />
+                      <path
+                        d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z"
+                        fill="black" />
+                      <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"
+                        fill="black" />
+                      <path
+                        d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"
+                        fill="black" />
+                      <path
+                        d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z"
+                        fill="black" />
+                      <path
+                        d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z"
+                        fill="black" />
+                      <path
+                        d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z"
+                        fill="black" />
+                      <path
+                        d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z"
+                        fill="black" />
+                    </g>
+                  </svg>
+                  <span class="visually-hidden">Выбрать дату</span>
+                </button>
+                <input class="date-field" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+              </span>
+            </p>
+            <p class="date-check arrival-date-check">Мы не можем отправить вас в прошлое.</p>
+            <p class="date departure-date">
+              <label class="field-label" for="departure-date">Дата выезда:</label>
+              <span class="date-field-form">
+                <button class="button-date" type="button">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                      <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z"
+                        fill="black" />
+                      <path
+                        d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"
+                        fill="black" />
+                      <path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z"
+                        fill="black" />
+                      <path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z"
+                        fill="black" />
+                      <path
+                        d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z"
+                        fill="black" />
+                      <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"
+                        fill="black" />
+                      <path
+                        d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"
+                        fill="black" />
+                      <path
+                        d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z"
+                        fill="black" />
+                      <path
+                        d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z"
+                        fill="black" />
+                      <path
+                        d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z"
+                        fill="black" />
+                      <path
+                        d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z"
+                        fill="black" />
+                    </g>
+                  </svg>
+                  <span class="visually-hidden">Выбрать дату</span>
+                </button>
+                <input class="date-field" type="text" id="departure-date" name="departure-date" value="1 сентября 2021">
+              </span>
+            </p>
+            <p class="date-check departure-date-check">На эти даты есть свободные номера. Пока есть.</p>
+            <p class="person adult-person">
+              <label class="field-label" for="adult">Взрослые:</label>
+              <span class="person-number">
+                <button class="button-control button-decrease" type="button">
+                  <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z" />
+                  </svg>
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <button class="button-control button-increase" type="button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                  </svg>
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+                <input class="input-field person-field" type="number" id="adult" name="adult" value="2">
+              </span>
+            </p>
+            <p class="person child-person">
+              <span class="field-label-info">
+                <label class="field-label" for="child">Дети:</label>
+                <span class="info-field">
+                  <button class="info" type="button">
+                    i
+                    <span class="info-tooltip"><span class="info-tooltip-text">Укажите количество детей, которые будут с
+                        вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </button>
+                </span>
+              </span>
+              <span class="person-number">
+                <button class="button-control button-decrease" type="button">
+                  <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z" />
+                  </svg>
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <button class="button-control button-increase" type="button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                  </svg>
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+                <input class="input-field person-field" type="number" id="child" name="child" value="1">
+              </span>
+            </p>
+          </fieldset>
+          <button class="button modal-button-search" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
 </body>
 
 </html>
