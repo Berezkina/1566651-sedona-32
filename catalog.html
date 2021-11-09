@@ -19,10 +19,10 @@
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="about.html">О Седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -61,10 +61,14 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z" />
+                  <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" />
+                </svg>
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Гостиницы</a>
+              <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
         </header>
@@ -130,11 +134,11 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="price-range">
                 <div class="price-range-wrapper">
-                  <label class="catalog-filter-label" for="range-min">
-                    <input class="price-input" type="number" min="0" id="range-min" name="range-min" value="0">
+                  <label class="catalog-filter-label">
+                    <input class="price-input" type="number" min="0" name="range-min" value="0">
                   </label>
-                  <label class="catalog-filter-label" for="range-max">
-                    <input class="price-input" type="number" max="10000" id="range-max" name="range-max" value="9000">
+                  <label class="catalog-filter-label">
+                    <input class="price-input" type="number" max="10000" name="range-max" value="9000">
                   </label>
                 </div>
                 <div class="price-range-scale">
@@ -398,6 +402,7 @@
               </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
+          </li>
         </ul>
         <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="footer-copyright-link" href="https://htmlacademy.ru/">
