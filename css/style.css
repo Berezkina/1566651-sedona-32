@@ -952,6 +952,8 @@ img {
 
   display: block;
   padding-left: 39px;
+
+  cursor: pointer;
 }
 
 .control-input[type="checkbox"] + .control-mark {
@@ -1596,6 +1598,7 @@ img {
 .catalog-hotels .button-favourites-active:focus-visible,
 .catalog-hotels .button-favourites-active:active {
   background-color: #6c9e42;
+  outline: none;
 }
 
 .catalog-hotels .button-favourites-active:focus-visible {
