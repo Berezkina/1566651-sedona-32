@@ -1343,6 +1343,7 @@ img {
   border-radius: 4px;
 
   appearance: none;
+  cursor: pointer;
 }
 
 .sorting-type-form .select-control:hover,
@@ -1743,6 +1744,7 @@ img {
   border-radius: 4px;
 
   appearance: none;
+  cursor: pointer;
 }
 
 .hotels-per-page-form .select-control:hover,
